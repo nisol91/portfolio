@@ -1,33 +1,52 @@
 
-/**
- * First we will load all of this project's JavaScript dependencies which
- * includes Vue and other libraries. It is a great starting point when
- * building robust, powerful web applications using Vue and Laravel.
- */
 
 require('./bootstrap');
 
 window.Vue = require('vue');
 
-/**
- * The following block of code may be used to automatically register your
- * Vue components. It will recursively scan this directory for the Vue
- * components and automatically register them with their "basename".
- *
- * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
- */
-
-// const files = require.context('./', true, /\.vue$/i);
-// files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 
-/**
- * Next, we will create a fresh Vue application instance and attach it to
- * the page. Then, you may begin adding components to this application
- * or customize the JavaScript scaffolding to fit your unique needs.
- */
+
+Vue.directive('scroll', {
+    inserted: function (el, binding) {
+        let f = function (evt) {
+            if (binding.value(evt, el)) {
+                window.removeEventListener('scroll', f)
+            }
+        }
+        window.addEventListener('scroll', f)
+    }
+})
+
 
 const app = new Vue({
-    el: '#app'
+    el: '#app',
+    data: {
+        classes_1: ['nav_bar'],
+        classes_btn: ['btn', 'mybtn'],
+        show: false,
+    },
+    methods: {
+        changeNavClass() {
+            this.classes_1 = ['nav_scroll']
+        },
+        handleScroll: function (evt, el) {
+            if (window.scrollY > 5) {
+
+                this.classes_1.push('nav_scroll', 'box');
+
+                this.show = true;
+
+            // el.setAttribute(
+                //     'style',
+                //     'opacity: 1; transform: translate3d(0, -10px, 0)'
+                // )
+            } else if (window.scrollY < 1) {
+                this.classes_1 = ['nav_bar'];
+            }
+                console.log(window.scrollY);
+            // return window.scrollY > 100
+        },
+    }
 });

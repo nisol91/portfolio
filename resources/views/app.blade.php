@@ -13,7 +13,7 @@
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
         {{-- Favicon --}}
-        {{-- <link rel="shortcut icon" href="{{ asset('icon.png') }}"> --}}
+        <link rel="shortcut icon" href="{{ asset('images/logo.png') }}">
     </head>
     <body>
         @include('partials.navbar')

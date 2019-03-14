@@ -1,5 +1,6 @@
 <div class="foot_er">
-    footer
+    <h4>Vectors graphics designed by Freepik</h4>
+    <h4>This page is made with Vue.js & Laravel</h4>
 
-    Vectors graphics designed by Freepik
+
 </div>
