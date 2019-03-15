@@ -1,0 +1,9 @@
+.foot_er {
+    @extend .flex_1;
+    width: 100%;
+    height: 300px;
+    background-color: $color_cold_1;
+    h4 {
+        color: $color_cold_2;
+    }
+}

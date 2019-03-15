@@ -32,16 +32,73 @@
                     <img src="{{asset('images/laravel.png')}}" alt="">
                 </div>
             </div>
-            <div class="container">
+
+            <div class="container languages">
                 <div class="row">
-                    <div class="col-sm">
-                    One of three columns
+                    <div class="col-6 flex_1">
+                        <h4>Front-end developer</h4>
+                        <div class="card flex_1" style="width: 18rem; height: 350px;">
+                            <img class="card-img-top" src="{{asset('images/frontend.svg')}}" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">I really love to create and style complex layouts with modern tools</p>
+                            </div>
+                            <div class="card-body">
+                                <h2>Languages and frameworks:</h2>
+                                <p class="card-text">HTML, CSS, Scss, Bootstrap, Bulma, JQuery, Vue.js</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-sm">
-                    One of three columns
+                    <div class="col-6 flex_1">
+                        <h4>Back-end developer</h4>
+                        <div class="card flex_1" style="width: 18rem; height: 350px;">
+                            <img class="card-img-top" src="{{asset('images/backend.svg')}}" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">It is very important to know how the databases and the most important frameworks work, in order to create modern webapps</p>
+                            </div>
+                            <div class="card-body">
+                                <h2>Languages and frameworks:</h2>
+                                <p class="card-text">PHP, Laravel, Vue.js, Wordpress</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-sm">
-                    One of three columns
+                </div>
+            </div>
+
+            <div class="container about_me">
+                <div class="row flex_1">
+                    <h1>About me</h1>
+                    <p>ciao</p>
+                </div>
+            </div>
+
+            <div class="container projects">
+                 <div class="row flex_1">
+                    <h1>My projects</h1>
+                    <p>ciao</p>
+                </div>
+                <div class="row">
+                    <div class="col-12 projects_container">
+                        <div class="proj">
+
+                        </div>
+                        <div class="proj">
+
+                        </div>
+                        <div class="proj">
+
+                        </div>
+                        <div class="proj">
+
+                        </div>
+                        <div class="proj">
+
+                        </div>
+                        <div class="proj">
+
+                        </div>
+                        <div class="proj">
+
+                        </div>
                     </div>
                 </div>
             </div>

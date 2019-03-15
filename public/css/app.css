@@ -5,7 +5,8 @@
   height: auto;
 }
 
-.flex_1 {
+.flex_1,
+.foot_er {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,18 +25,23 @@
   align-items: center;
 }
 
-.flex_3 {
+.flex_4,
+.projects .projects_container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 h1,
-h4 {
+h4,
+h2,
+p {
   color: #335758;
+  font-weight: 200;
 }
 
 .nav_bar {
+  z-index: 9999;
   width: 100%;
   height: 120px;
   background: white;
@@ -50,14 +56,18 @@ h4 {
 
 .nav_bar .mybtn {
   background-color: none;
+  font-weight: 800;
+  color: #335758;
   border-color: #335758;
-  border-radius: 10px !important;
+  border-radius: 15px !important;
+  transition: 1s all ease-in-out;
+  border: 1.5px solid #335758 !important;
 }
 
 .nav_bar .mybtn:hover {
   background-color: #335758;
   color: white;
-  transition: 2s;
+  transition: 1s all ease-in-out;
 }
 
 .nav_scroll {
@@ -84,7 +94,6 @@ h4 {
 }
 
 .skills_cont h2 {
-  color: #335758;
   font-size: 30px;
 }
 
@@ -95,6 +104,60 @@ h4 {
 .skills_cont .skills img {
   width: 100px;
   margin: 0 15px;
+  z-index: 1;
+}
+
+.languages h1 {
+  font-weight: 200;
+}
+
+.languages h2 {
+  font-size: 15px;
+}
+
+.languages img {
+  width: 80px;
+  margin: 10px 0;
+}
+
+.about_me h1 {
+  font-weight: 200;
+}
+
+.projects h1 {
+  font-weight: 200;
+}
+
+.projects h2 {
+  font-size: 15px;
+}
+
+.projects img {
+  width: 80px;
+  margin: 10px 0;
+}
+
+.projects .projects_container {
+  flex-wrap: wrap;
+}
+
+.projects .projects_container .proj {
+  height: 250px;
+  width: 300px;
+  background-color: white;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.foot_er {
+  width: 100%;
+  height: 300px;
+  background-color: #335758;
+}
+
+.foot_er h4 {
+  color: #B4C3A7;
 }
 
 /*!

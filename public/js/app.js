@@ -49001,15 +49001,12 @@ var app = new Vue({
     handleScroll: function handleScroll(evt, el) {
       if (window.scrollY > 5) {
         this.classes_1.push('nav_scroll', 'box');
-        this.show = true; // el.setAttribute(
-        //     'style',
-        //     'opacity: 1; transform: translate3d(0, -10px, 0)'
-        // )
+        this.show = true;
       } else if (window.scrollY < 1) {
         this.classes_1 = ['nav_bar'];
       }
 
-      console.log(window.scrollY); // return window.scrollY > 100
+      console.log(window.scrollY);
     }
   }
 });

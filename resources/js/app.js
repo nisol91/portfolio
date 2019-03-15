@@ -38,15 +38,10 @@ const app = new Vue({
 
                 this.show = true;
 
-            // el.setAttribute(
-                //     'style',
-                //     'opacity: 1; transform: translate3d(0, -10px, 0)'
-                // )
             } else if (window.scrollY < 1) {
                 this.classes_1 = ['nav_bar'];
             }
                 console.log(window.scrollY);
-            // return window.scrollY > 100
         },
     }
 });

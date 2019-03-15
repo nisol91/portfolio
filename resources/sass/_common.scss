@@ -18,11 +18,12 @@
     justify-content: space-around;
     align-items: center;
 }
-.flex_3 {
+.flex_4 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-h1, h4 {
+h1, h4, h2, p {
     color: $color_cold_1;
+    font-weight: 200;
 }
