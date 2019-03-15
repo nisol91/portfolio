@@ -5,7 +5,7 @@ require('./bootstrap');
 window.Vue = require('vue');
 
 
-Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+Vue.component('project', require('./components/ProjectComponent.vue').default);
 
 
 Vue.directive('scroll', {
@@ -20,12 +20,37 @@ Vue.directive('scroll', {
 })
 
 
+const projects = new Vue({
+    el: '#projects',
+    data: {
+        projects: [
+            { title: 'Proj_1' },
+            { title: 'Proj_1' },
+            { title: 'Proj_1' },
+            { title: 'Proj_1' },
+        ],
+    },
+    methods: {
+    }
+});
+
+
 const app = new Vue({
     el: '#app',
     data: {
         classes_1: ['nav_bar'],
         classes_btn: ['btn', 'mybtn'],
         show: false,
+        projects: [
+            {title: 'Proj_1'},
+            { title: 'Proj_1' },
+            { title: 'Proj_1' },
+            { title: 'Proj_1' },
+            { title: 'Proj_1' },
+            { title: 'Proj_1' },
+            { title: 'Proj_1' },
+
+        ],
     },
     methods: {
         changeNavClass() {

@@ -15,8 +15,8 @@
                     <h2 class="lead">Here my skills.</h2>
                 </div>
             </div>
-            <div class="row skills">
-                <div class="col-12 flex_3">
+            <div class="row skills ">
+                <div class="col-12 flex_3 ">
                     <img src="{{asset('images/html.svg')}}" alt="">
                     <img src="{{asset('images/css.png')}}" alt="">
                     <img src="{{asset('images/sass.png')}}" alt="">
@@ -77,27 +77,9 @@
                     <p>ciao</p>
                 </div>
                 <div class="row">
-                    <div class="col-12 projects_container">
-                        <div class="proj">
-
-                        </div>
-                        <div class="proj">
-
-                        </div>
-                        <div class="proj">
-
-                        </div>
-                        <div class="proj">
-
-                        </div>
-                        <div class="proj">
-
-                        </div>
-                        <div class="proj">
-
-                        </div>
-                        <div class="proj">
-
+                    <div id="projects">
+                        <div class="col-12 projects_container">
+                            <project v-bind:project="project" v-for="project in projects"></project>
                         </div>
                     </div>
                 </div>
