@@ -2,7 +2,7 @@
 @section('main_content')
     <div class="main_cont">
         <div class="jumbotron jumbotron-fluid flex_1">
-            <h1 class="display-4">Hello, world! I am Nicola, Full-Stack Dev.</h1>
+            <h1 class="display-4 main_title">Hello, world! I am Nicola, Full-Stack Dev.</h1>
             <p class="lead">I love coding, creating things.</p>
             <hr class="my-4">
             <img src="{{asset('images/jumbo_img.png')}}" alt="">
@@ -33,9 +33,8 @@
                 </div>
             </div>
 
-            <div class="container languages">
-                <div class="row">
-                    <div class="col-6 flex_1">
+            <div class="container languages col-12">
+                    <div class="flex_1">
                         <h4>Front-end developer</h4>
                         <div class="card flex_1" style="width: 18rem; height: 350px;">
                             <img class="card-img-top" src="{{asset('images/frontend.svg')}}" alt="Card image cap">
@@ -48,7 +47,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 flex_1">
+                    <div class="flex_1">
                         <h4>Back-end developer</h4>
                         <div class="card flex_1" style="width: 18rem; height: 350px;">
                             <img class="card-img-top" src="{{asset('images/backend.svg')}}" alt="Card image cap">
@@ -61,7 +60,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
             </div>
 
             <div class="container about_me">

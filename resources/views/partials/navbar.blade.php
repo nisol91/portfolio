@@ -1,4 +1,4 @@
-<div id="app">
+<div id="navbar">
     <div :class="classes_1" v-scroll="handleScroll">
         <div class="container flex_2">
             <div class="logo">

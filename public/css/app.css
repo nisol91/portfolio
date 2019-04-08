@@ -26,7 +26,8 @@
 }
 
 .flex_4,
-.projects .projects_container {
+.projects .projects_container,
+.languages {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -89,6 +90,20 @@ p {
   border-radius: 5px;
 }
 
+.main_title {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .jumbotron img {
+    width: 200px;
+  }
+
+  .jumbotron h1 {
+    font-size: 35px;
+  }
+}
+
 .skills_cont {
   padding: 40px 0;
 }
@@ -107,8 +122,13 @@ p {
 
 .skills_cont .skills img {
   width: 100px;
-  margin: 0 15px;
+  margin: 10px 15px;
   z-index: 1;
+}
+
+.languages {
+  flex-wrap: wrap;
+  margin-bottom: 50px;
 }
 
 .languages h1 {
@@ -122,6 +142,10 @@ p {
 .languages img {
   width: 80px;
   margin: 10px 0;
+}
+
+.languages .card {
+  margin: 10px;
 }
 
 .about_me h1 {
@@ -148,10 +172,22 @@ p {
 .projects .projects_container .proj {
   height: 250px;
   width: 300px;
-  background-color: white;
+  background-color: grey;
   border: 1px solid lightgrey;
+  border: none;
   border-radius: 5px;
   margin: 5px;
+  transition: 0.5s all ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects .projects_container .proj:hover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+  transition: 0.7s all ease-in-out;
 }
 
 @media (max-width: 1250px) {
@@ -178,6 +214,21 @@ p {
 
 .foot_er h4 {
   color: #B4C3A7;
+  text-align: center;
+}
+
+.foot_er h5 {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .foot_er h4 {
+    font-size: 15px;
+  }
+
+  .foot_er h5 {
+    font-size: 10pxpx;
+  }
 }
 
 /*!

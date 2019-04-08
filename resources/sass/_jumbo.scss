@@ -4,4 +4,16 @@
         border-radius: 5px;
     }
 }
-
+.main_title {
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .jumbotron {
+        img {
+            width: 200px;
+        }
+        h1 {
+            font-size: 35px;
+        }
+    }
+}

@@ -1,7 +1,8 @@
 <template>
-    <div class="proj">
+    <a href=""><div class="proj">
+        <!-- <img src="{{ project.img }}" alt=""> -->
         <h2>{{ project.title }}</h2>
-    </div>
+    </div></a>
 </template>
 
 <script>

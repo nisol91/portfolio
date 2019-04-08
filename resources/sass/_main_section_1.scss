@@ -10,12 +10,15 @@
         margin: 50px 0;
         img {
             width: 100px;
-            margin: 0 15px;
+            margin: 10px 15px;
             z-index: 1;
         }
     }
 }
 .languages {
+    @extend .flex_4;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
     h1 {
         font-weight: 200;
     }
@@ -26,6 +29,10 @@
         width: 80px;
         margin: 10px 0;
     }
+    .card {
+        margin: 10px;
+    }
+
 }
 .about_me {
     h1 {
@@ -51,10 +58,20 @@
         .proj {
             height: 250px;
             width: 300px;
-            background-color: white;
+            background-color: grey;
             border: 1px solid lightgrey;
+            border: none;
             border-radius: 5px;
             margin: 5px;
+            transition: .5s all ease-in-out;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &:hover {
+                transform: scale(1.2, 1.2);
+                transition: .7s all ease-in-out;
+            }
         }
     }
 }

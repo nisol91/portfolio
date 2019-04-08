@@ -24,10 +24,22 @@ const projects = new Vue({
     el: '#projects',
     data: {
         projects: [
-            { title: 'Proj_1' },
-            { title: 'Proj_1' },
-            { title: 'Proj_1' },
-            { title: 'Proj_1' },
+        {
+            title: 'BoolBnB',
+            img: 'images/boolbnb',
+        },
+        {
+            title: 'Proj_1',
+            img: 'images/boolbnb',
+        },
+        {
+            title: 'Proj_1',
+            img: 'images/boolbnb',
+        },
+        {
+            title: 'Proj_1',
+            img: 'images/boolbnb',
+        },
         ],
     },
     methods: {
@@ -36,19 +48,13 @@ const projects = new Vue({
 
 
 const app = new Vue({
-    el: '#app',
+    el: '#navbar',
     data: {
         classes_1: ['nav_bar'],
         classes_btn: ['btn', 'mybtn'],
         show: false,
         projects: [
-            {title: 'Proj_1'},
-            { title: 'Proj_1' },
-            { title: 'Proj_1' },
-            { title: 'Proj_1' },
-            { title: 'Proj_1' },
-            { title: 'Proj_1' },
-            { title: 'Proj_1' },
+
 
         ],
     },

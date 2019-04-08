@@ -1769,6 +1769,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['project'],
   mounted: function mounted() {
@@ -36820,8 +36821,10 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "proj" }, [
-    _c("h2", [_vm._v(_vm._s(_vm.project.title))])
+  return _c("a", { attrs: { href: "" } }, [
+    _c("div", { staticClass: "proj" }, [
+      _c("h2", [_vm._v(_vm._s(_vm.project.title))])
+    ])
   ])
 }
 var staticRenderFns = []
@@ -48961,38 +48964,28 @@ var projects = new Vue({
   el: '#projects',
   data: {
     projects: [{
-      title: 'Proj_1'
+      title: 'BoolBnB',
+      img: 'images/boolbnb'
     }, {
-      title: 'Proj_1'
+      title: 'Proj_1',
+      img: 'images/boolbnb'
     }, {
-      title: 'Proj_1'
+      title: 'Proj_1',
+      img: 'images/boolbnb'
     }, {
-      title: 'Proj_1'
+      title: 'Proj_1',
+      img: 'images/boolbnb'
     }]
   },
   methods: {}
 });
 var app = new Vue({
-  el: '#app',
+  el: '#navbar',
   data: {
     classes_1: ['nav_bar'],
     classes_btn: ['btn', 'mybtn'],
     show: false,
-    projects: [{
-      title: 'Proj_1'
-    }, {
-      title: 'Proj_1'
-    }, {
-      title: 'Proj_1'
-    }, {
-      title: 'Proj_1'
-    }, {
-      title: 'Proj_1'
-    }, {
-      title: 'Proj_1'
-    }, {
-      title: 'Proj_1'
-    }]
+    projects: []
   },
   methods: {
     changeNavClass: function changeNavClass() {
