@@ -4,6 +4,15 @@
         border-radius: 5px;
     }
 }
+#particles-js {
+    width: 100%;
+    height: 300px;
+    background-color: $color_cold_1;
+    background-image: url('');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
 .main_title {
     text-align: center;
 }
@@ -17,3 +26,5 @@
         }
     }
 }
+
+
