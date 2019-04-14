@@ -2,8 +2,23 @@
 
 require('./bootstrap');
 
+// Wait for window load
+// $(window).load(function () {
+//     // Animate loader off screen
+// });
+
+$(document).ready(function () {
+    $(".se-pre-con").fadeOut(3000);
+    $('.story').hide();
+    $('.fa-caret-up').click(function (e) {
+        $('.story').slideToggle();
+        $(this).toggleClass('rotated');
 
 
+    });
+
+
+});
 
 
 //---vue
@@ -33,18 +48,25 @@ const projects = new Vue({
         {
             title: 'BoolBnB',
             img: 'images/boolbnb',
+            tag: 'progetto_1',
         },
         {
             title: 'Proj_1',
             img: 'images/boolbnb',
+            tag: 'progetto_1',
+
         },
         {
             title: 'Proj_1',
             img: 'images/boolbnb',
+            tag: 'progetto_1',
+
         },
         {
             title: 'Proj_1',
             img: 'images/boolbnb',
+            tag: 'progetto_1',
+
         },
         ],
     },
@@ -154,7 +176,7 @@ Vue.component('carda', {
             this.mouseLeaveDelay = setTimeout(() => {
                 this.mouseX = 0;
                 this.mouseY = 0;
-            }, 1000);
+            }, 500);
         }
     }
 });

@@ -48945,8 +48945,20 @@ module.exports = function(module) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js"); //---vue
+__webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js"); // Wait for window load
+// $(window).load(function () {
+//     // Animate loader off screen
+// });
 
+
+$(document).ready(function () {
+  $(".se-pre-con").fadeOut(3000);
+  $('.story').hide();
+  $('.fa-caret-up').click(function (e) {
+    $('.story').slideToggle();
+    $(this).toggleClass('rotated');
+  });
+}); //---vue
 
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
 Vue.component('project', __webpack_require__(/*! ./components/ProjectComponent.vue */ "./resources/js/components/ProjectComponent.vue").default);
@@ -48966,16 +48978,20 @@ var projects = new Vue({
   data: {
     projects: [{
       title: 'BoolBnB',
-      img: 'images/boolbnb'
+      img: 'images/boolbnb',
+      tag: 'progetto_1'
     }, {
       title: 'Proj_1',
-      img: 'images/boolbnb'
+      img: 'images/boolbnb',
+      tag: 'progetto_1'
     }, {
       title: 'Proj_1',
-      img: 'images/boolbnb'
+      img: 'images/boolbnb',
+      tag: 'progetto_1'
     }, {
       title: 'Proj_1',
-      img: 'images/boolbnb'
+      img: 'images/boolbnb',
+      tag: 'progetto_1'
     }]
   },
   methods: {}
@@ -49063,7 +49079,7 @@ Vue.component('carda', {
       this.mouseLeaveDelay = setTimeout(function () {
         _this.mouseX = 0;
         _this.mouseY = 0;
-      }, 1000);
+      }, 500);
     }
   }
 });

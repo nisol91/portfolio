@@ -69,48 +69,53 @@
 
         <div class="container about_me">
             <div class="row flex_1">
-                <h1>About me</h1>
-                <p>ciao</p>
+                <h1>About me <i class="fas fa-caret-up"></i></h1>
+
+                <div class="story">
+                    <p>
+                        Junior Full Stack Web Developer,
+                        graduated in Civil Engineering.
+                        Knowledges in both Frontend and Backend
+                        Web Development.
+                    </p>
+                </div>
+
             </div>
         </div>
 
-        <div class="container projects">
+        <div class="container projects" id="projects">
             <div class="row flex_1">
                 <h1>My projects</h1>
-                <p>ciao</p>
+                <p></p>
             </div>
             <div class="row">
-                <div id="projects">
-                    <div class="col-12 projects_container">
-                        <project v-bind:project="project" v-for="project in projects"></project>
+                {{-- <project v-bind:project="project" v-for="project in projects"></project> --}}
+
+                <div class="container projects projects_container">
+
+                    <div id="app_parallax" class="container_parallax">
+                        <carda
+                        data-image="https://images.unsplash.com/photo-1479660656269-197ebb83b540?dpr=2&auto=compress,format&fit=crop&w=1199&h=798&q=80&cs=tinysrgb&crop=">
+                            <h1 slot="header">Canyons</h1>
+                            <p slot="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </carda>
+                        <carda
+                            data-image="https://images.unsplash.com/photo-1479659929431-4342107adfc1?dpr=2&auto=compress,format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=">
+                            <h1 slot="header">Beaches</h1>
+                            <p slot="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </carda>
+                        <carda
+                            data-image="https://images.unsplash.com/photo-1479644025832-60dabb8be2a1?dpr=2&auto=compress,format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=">
+                            <h1 slot="header">Trees</h1>
+                            <p slot="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </carda>
+                        <carda
+                            data-image="https://images.unsplash.com/photo-1479621051492-5a6f9bd9e51a?dpr=2&auto=compress,format&fit=crop&w=1199&h=811&q=80&cs=tinysrgb&crop=">
+                            <h1 slot="header">Lakes</h1>
+                            <p slot="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </carda>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="container projects">
-            <h1 class="title">Hover over the cards</h1>
-
-            <div id="app_parallax" class="container">
-                <carda
-                    data-image="https://images.unsplash.com/photo-1479660656269-197ebb83b540?dpr=2&auto=compress,format&fit=crop&w=1199&h=798&q=80&cs=tinysrgb&crop=">
-                    <h1 slot="header">Canyons</h1>
-                    <p slot="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </carda>
-                <carda
-                    data-image="https://images.unsplash.com/photo-1479659929431-4342107adfc1?dpr=2&auto=compress,format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=">
-                    <h1 slot="header">Beaches</h1>
-                    <p slot="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </carda>
-                <carda
-                    data-image="https://images.unsplash.com/photo-1479644025832-60dabb8be2a1?dpr=2&auto=compress,format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=">
-                    <h1 slot="header">Trees</h1>
-                    <p slot="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </carda>
-                <carda
-                    data-image="https://images.unsplash.com/photo-1479621051492-5a6f9bd9e51a?dpr=2&auto=compress,format&fit=crop&w=1199&h=811&q=80&cs=tinysrgb&crop=">
-                    <h1 slot="header">Lakes</h1>
-                    <p slot="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </carda>
             </div>
         </div>
     </div>

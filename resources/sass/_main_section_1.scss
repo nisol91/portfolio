@@ -75,8 +75,52 @@
         }
     }
 }
+.story {
+    p {
+        text-align: center;
+    }
+}
 
-//parallax per le card
+//rotate freccia
+i {
+    cursor: pointer;
+    -webkit-transition: all 300ms ease-in 0s;
+    -moz-transition: all 300ms ease-in 0s;
+    -o-transition: all 300ms ease-in 0s;
+    transition: all 1000ms ease-in 0s;
+}
+.rotated {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+//custom loader animation
+.no-js #loader {
+    display: none;
+}
+
+.js #loader {
+    display: block;
+    position: absolute;
+    left: 100px;
+    top: 0;
+}
+
+.se-pre-con {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    // background: url('/home/nicola/nicola_sites/portfolio-nicola/public/images/Preloader_5.gif') center no-repeat #fff;
+    //e' questa che mi causa il loop infinito di npm run watch, quindi in produzione lasciala commentata.#######!!!!!!!!!!!!!!
+}
+
+
+//parallax per le card############
 $hoverEasing: cubic-bezier(0.23, 1, 0.32, 1);
 $returnEasing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
 
@@ -106,7 +150,7 @@ $returnEasing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
 //     margin-top: 10px;
 // }
 
-.container {
+.container_parallax {
     padding: 40px 80px;
     display: flex;
     flex-wrap: wrap;
