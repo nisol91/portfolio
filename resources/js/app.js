@@ -8,7 +8,7 @@ require('./bootstrap');
 // });
 
 $(document).ready(function () {
-    $(".se-pre-con").fadeOut(3000);
+    $(".se-pre-con").fadeOut(6000);
     $('.story').hide();
     $('.fa-caret-up').click(function (e) {
         $('.story').slideToggle();
@@ -91,15 +91,16 @@ const app = new Vue({
             this.classes_1 = ['nav_scroll']
         },
         handleScroll: function (evt, el) {
-            if (window.scrollY > 5) {
 
-                this.classes_1.push('nav_scroll', 'box');
+                if (window.scrollY > 300) {
 
-                this.show = true;
+                    this.classes_1.push('nav_scroll', 'box');
 
-            } else if (window.scrollY < 1) {
-                this.classes_1 = ['nav_bar'];
-            }
+                    this.show = true;
+
+                } else if (window.scrollY < 1) {
+                    this.classes_1 = ['nav_bar'];
+                }
                 console.log(window.scrollY);
         },
     }

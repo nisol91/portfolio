@@ -48952,7 +48952,7 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js"); // Wait f
 
 
 $(document).ready(function () {
-  $(".se-pre-con").fadeOut(3000);
+  $(".se-pre-con").fadeOut(6000);
   $('.story').hide();
   $('.fa-caret-up').click(function (e) {
     $('.story').slideToggle();
@@ -49009,7 +49009,7 @@ var app = new Vue({
       this.classes_1 = ['nav_scroll'];
     },
     handleScroll: function handleScroll(evt, el) {
-      if (window.scrollY > 5) {
+      if (window.scrollY > 300) {
         this.classes_1.push('nav_scroll', 'box');
         this.show = true;
       } else if (window.scrollY < 1) {

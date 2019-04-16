@@ -1,0 +1,14 @@
+.form-cont {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+.form-box {
+    width: 90%;
+    height: auto;
+    background: $color_cold_1;
+    border-radius: 5px;
+}

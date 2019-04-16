@@ -11,8 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('main');
-});
 
 
+Route::get('/', 'HomeController@index')->name('home');
+
+Route::get('contact-me', 'HomeController@form')->name('form');
